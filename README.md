@@ -1,16 +1,28 @@
-# todoey
+# Todoey
 
-A new Flutter project.
+Learn how to manage state in Flutter. Llook at various Flutter architecture choices and learn to use the officially recommended Provider package to manage the app state.
 
-## Getting Started
+## Pre-Requisite to Run The Program
 
-This project is a starting point for a Flutter application.
+- Have Flutter installed (for installation guidance go check [this link](https://flutter.dev/docs/get-started/install))
+- Have an Android / iOS emulator installed (or you can simply plug your own device to your computer)
 
-A few resources to get you started if this is your first Flutter project:
+## How to Build The Program
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Open your terminal
+- Change the working directory into the current project directory
+- Execute `flutter build apk` in your terminal
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run The Program
+
+- Open your terminal
+- Change the working directory into the current project directory
+- Execute `flutter run` in your terminal
+
+## How to Run The Tests
+
+No test has been written yet for this app
+
+## App Preview
+
+TBD
