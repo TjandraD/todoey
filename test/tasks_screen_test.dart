@@ -19,5 +19,15 @@ void main() {
 
       expect(find.byType(FloatingActionButton), findsOneWidget);
     });
+
+    testWidgets('CheckboxListTile Should Call onChanged When Tapped',
+        (WidgetTester tester) async {
+      await tester.pumpWidget(const app.MyApp());
+
+      await tester.tap(find.text("This is the first task"));
+      await tester.pumpAndSettle();
+
+      expect(find.byType(ListView), findsOneWidget);
+    });
   });
 }
