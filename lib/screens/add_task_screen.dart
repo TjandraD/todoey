@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  const AddTaskScreen({Key? key}) : super(key: key);
+  final Function(String title) saveTask;
+
+  const AddTaskScreen({
+    Key? key,
+    required this.saveTask,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    String newTaskTitle = '';
+
     return Container(
       color: const Color(0xFF757575),
       child: Container(
@@ -27,17 +34,18 @@ class AddTaskScreen extends StatelessWidget {
                 fontSize: 30.0,
               ),
             ),
-            const TextField(
+            TextField(
               autofocus: true,
               textAlign: TextAlign.center,
+              onChanged: (value) {
+                newTaskTitle = value;
+              },
             ),
             const SizedBox(
               height: 16.0,
             ),
             MaterialButton(
-              onPressed: () {
-                // TODO: Add task to the list
-              },
+              onPressed: () => saveTask(newTaskTitle),
               color: Colors.lightBlueAccent,
               child: const Text(
                 "Add",
