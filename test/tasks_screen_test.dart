@@ -29,5 +29,17 @@ void main() {
 
       expect(find.byType(ListView), findsOneWidget);
     });
+
+    testWidgets('Task Should Be Removed onLongPressed',
+        (WidgetTester tester) async {
+      await tester.pumpWidget(const app.MyApp());
+
+      await tester.longPress(
+        find.text("This is the first task"),
+      );
+      await tester.pump(const Duration(seconds: 3));
+
+      expect(find.text("This is the first task"), findsNothing);
+    });
   });
 }
