@@ -21,4 +21,9 @@ class TasksData extends ChangeNotifier {
     _tasksList.add(task);
     notifyListeners();
   }
+
+  void updateTask(Task task) {
+    task.toggleDone();
+    notifyListeners();
+  }
 }
