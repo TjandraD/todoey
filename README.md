@@ -21,7 +21,16 @@ Learn how to manage state in Flutter. Llook at various Flutter architecture choi
 
 ## How to Run The Tests
 
-No test has been written yet for this app
+- Open your terminal
+- Change the working directory into the current project directory
+
+### Widget Test
+
+- Execute `flutter test` in your terminal, or `flutter test --coverage` if you want to generate the test coverage report
+
+### Integration Test
+
+- Execute `flutter test integration_test` in your terminal, or `flutter test integration_test --coverage` if you want to generate the test coverage report
 
 ## App Preview
 
