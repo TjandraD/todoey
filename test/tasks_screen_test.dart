@@ -37,7 +37,7 @@ void main() {
       await tester.longPress(
         find.text("This is the first task"),
       );
-      await tester.pump(const Duration(seconds: 3));
+      await tester.pump();
 
       expect(find.text("This is the first task"), findsNothing);
     });
